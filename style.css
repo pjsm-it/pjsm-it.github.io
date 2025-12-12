@@ -76,3 +76,40 @@ body.site-bg {
         height: 24px;
     }
 }
+
+.about-me {
+    background-color: var(--bg-card);
+    color: var(--text);
+    padding: 40px 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-photo {
+    width: 200px;       
+    height: 200px;      
+    border-radius: 50%; 
+    object-fit: cover;  
+    border: 2px solid var(--accent); 
+}
+
+
+.about-text {
+    flex: 1;
+}
+
+.about-text ul {
+    list-style: disc inside;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.about-text h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
