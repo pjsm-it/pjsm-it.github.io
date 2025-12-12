@@ -83,6 +83,12 @@ body.site-bg {
     padding: 40px 20px;
 }
 
+.about-me h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--accent);
+}
+
 .about-container {
     display: flex;
     align-items: center;
@@ -98,7 +104,6 @@ body.site-bg {
     border: 2px solid var(--accent); 
 }
 
-
 .about-text {
     flex: 1;
 }
@@ -112,4 +117,60 @@ body.site-bg {
 .about-text h3 {
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+.projects {
+    background-color: var(--bg-card);
+    color: var(--text);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: var(--bg);
+    border: 1px solid var(--text-secondary);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-title {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+.project-description {
+    margin: 10px 0;
+}
+
+.project-tools {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--accent);
+    transition: color 0.25s ease;
+}
+
+.project-link:hover {
+    color: var(--accent-hover);
 }
