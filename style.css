@@ -185,10 +185,25 @@ body.site-bg {
 }
 
 .project-separator {
-    width: 80%;
+    width: 100%;
     border: none;
     border-top: 1px solid var(--text-secondary);
     margin: 20px 0;
+}
+
+.write-ups{
+    background-color: var(--bg-card);
+    color: var(--text);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.writeups-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;    
+    gap: 20px;              
+    margin-top: 20px;
 }
 
 .write-ups h2 {
