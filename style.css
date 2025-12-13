@@ -132,14 +132,6 @@ body.site-bg {
     color: var(--accent);
 }
 
-.projects-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start;    
-    gap: 20px;              
-    margin-top: 20px;
-}
-
 .project-card {
     background-color: var(--bg);
     border: 1px solid var(--text-secondary);
@@ -170,18 +162,6 @@ body.site-bg {
 .project-tools {
     font-size: 0.9rem;
     color: var(--text-secondary);
-}
-
-.project-link {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: var(--accent);
-    transition: color 0.25s ease;
-}
-
-.project-link:hover {
-    color: var(--accent-hover);
 }
 
 .write-ups{
@@ -304,6 +284,11 @@ body.site-bg {
     object-fit: contain;
 }
 
+.cert-subcard img {
+    max-height: 80px;
+    margin: 0 auto;
+}
+
 @media (max-width: 600px) {
     .cert-subcards {
         flex-direction: column; 
@@ -314,20 +299,23 @@ body.site-bg {
     }
 }
 
-.collapsible-card .collapsible-toggle {
-    background-color: var(--bg-card);
-    color: var(--accent);
-    border: 1px solid var(--text-secondary);
-    border-radius: 5px;
-    padding: 6px 12px;
-    margin-top: 8px;
+.collapsible-toggle {
+    width: 20px;
+    height: 20px;
     cursor: pointer;
-    font-size: 0.9rem;
+    display: inline-block; 
+    transition: transform 0.3s ease, color 0.25s ease, filter 0.25s ease;
+    color: var(--text);
 }
 
-.collapsible-card .collapsible-toggle:hover {
-    background-color: var(--accent-hover);
-    color: var(--bg);
+.collapsible-toggle:hover {
+    color: var(--accent);
+    transform: scale(1.15) rotate(0deg);
+    filter: drop-shadow(0px 0px 4px var(--accent));
+}
+
+.collapsible-card.active .collapsible-toggle {
+    transform: scale(1.15) rotate(180deg);
 }
 
 .collapsible-content {
