@@ -314,7 +314,6 @@ body.site-bg {
     }
 }
 
-/* Colapsável para Bootcamp */
 .collapsible-card .collapsible-toggle {
     background-color: var(--bg-card);
     color: var(--accent);
@@ -343,7 +342,6 @@ body.site-bg {
     margin: 0;
 }
 
-/* Classe ativa para expandir */
 .collapsible-card.active .collapsible-content {
-    max-height: 500px; /* suficiente para o conteúdo interno */
+    max-height: 500px; 
 }
