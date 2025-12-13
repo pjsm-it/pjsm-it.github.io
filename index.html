@@ -9,7 +9,7 @@
 </head>
 
 <body class="site-bg">
-    <header class="header">
+    <header class="header site-bg" id="top">
         <h1 class="name-title">Paulo Melo</h1>
         <p class="location">📍Braga, Portugal</p>
 
@@ -62,23 +62,36 @@
         </div>
     </section>
 
-<section class="projects">
-    <h2>Projects</h2>
-    <p>Under Construction</p>
-</section>
-
-<section class="write-ups">
-    <h2>Write-Ups</h2>
-
-    <div class="writeups-container">
-        <div class="writeup-card">
-            <h3 class="writeup-title">HTB CTF Write-Up: Meow</h3>
-            <p class="writeup-summary">Beginner-friendly walkthrough of the Hack The Box “Meow” machine, focusing on VPN setup, basic network reconnaissance, service enumeration, and exploitation of a misconfigured Telnet service. This write-up documents the full process step by step, with explanations aimed at newcomers to CTFs and SOC-related concepts.</p>
-            <p class="writeup-tools"><strong>Tools:</strong> OpenVPN, Nmap, Linux CLI</p>
-            <a href="https://medium.com/@pjsm.it/htb-ctf-write-up-meow-b49f08afe390" target="_blank" class="icon-link" aria-label="Medium">
-                <img src="images/medium-brands-solid-full.svg" alt="Medium" class="icon">
+    <section class="projects">
+        <h2>Projects</h2>
+            <!--
+    <div class="projects-container">
+        <div class="project-card">
+            <h3 class="project-title">Project Title</h3>
+            <p class="project-description">Short description of the project.</p>
+            <p class="project-tools"><strong>Tools:</strong> Tool1, Tool2, Tool3</p>
+            <a href="#" target="_blank" class="icon-link" aria-label="GitHub">
+                <img src="images/square-github-brands-solid-full.svg" alt="GitHub" class="icon">
             </a>
         </div>
+    </div>
+    -->
+    <!-- TODO: adicionar mais project cards e atualizar o Under Construction quando possível -->
+        <p>Under Construction</p>
+    </section>
+
+    <section class="write-ups">
+        <h2>Write-Ups</h2>
+
+        <div class="writeups-container">
+            <div class="writeup-card">
+                <h3 class="writeup-title">HTB CTF Write-Up: Meow</h3>
+                <p class="writeup-summary">Beginner-friendly walkthrough of the Hack The Box “Meow” machine, focusing on VPN setup, basic network reconnaissance, service enumeration, and exploitation of a misconfigured Telnet service. This write-up documents the full process step by step, with explanations aimed at newcomers to CTFs and SOC-related concepts.</p>
+                <p class="writeup-tools"><strong>Tools:</strong> OpenVPN, Nmap, Linux CLI</p>
+                <a href="https://medium.com/@pjsm.it/htb-ctf-write-up-meow-b49f08afe390" target="_blank" class="icon-link" aria-label="Medium">
+                    <img src="images/medium-brands-solid-full.svg" alt="Medium" class="icon">
+                </a>
+            </div>
 
         <div class="writeup-card">
             <h3 class="writeup-title">HTB CTF Write-Up: Fawn</h3>
@@ -100,6 +113,7 @@
 
             <div class="cert-subcard">
                 <a href="https://tryhackme.com/p/pjsm.it" target="_blank">
+                    <!--TODO: Updates regulares à iframe estática-->
                 <img src="https://tryhackme-badges.s3.amazonaws.com/pjsm.it.png" alt="thm-iframe"/>
                 </a>
             </div>
@@ -155,5 +169,13 @@
 
 </section>
 
+<a href="#top" class="back-to-top">
+    <img src="images/arrow-up-from-bracket-solid-full.svg" alt="Back to Top">
+</a>
+
 </body>
+
+<footer class="site-footer">
+    <p>© <span id="current-year"></span> Paulo Melo. Licensed under CC BY-SA 4.0.</p>
+</footer>
 </html>
