@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     toggles.forEach(toggle => {
         toggle.addEventListener('click', () => {
-            const parent = toggle.parentElement;
+            const parent = toggle.closest('.collapsible-card');
             parent.classList.toggle('active');
         });
     });
