@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/theme.css">
 
     <!-- JS -->
+    <!-- TODO: verificar se todos fazem falta
+     e remover inúteis -->
     <script src="js/main.js" defer></script>
     <script src="js/animations.js" defer></script>
     <script src="js/theme-toggle.js" defer></script>
@@ -30,6 +32,37 @@
     <!-- HEADER / NAVBAR -->
     <header>
         <!-- Navbar: Logo/Name + links + dark/light toggle + EN/PT toggle -->
+        <div class="logo">
+            <h1>Paulo Melo</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <!-- TODO: li? talvez não! -->
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Theme toggle button (dark/light) -->
+        <!-- TODO: procurar imagens fontawesome -->
+         <!-- TODO: por isto a funcionar com CSS -->
+        <div class="theme-toggle">
+            <button id="themeBtn" aria-label="Toggle theme">
+                <img src="assets/icons/lightbulb-solid-full.svg" alt="Toggle Theme">
+            </button>
+        </div>
+
+        <!-- Language toggle button (EN/PT) -->
+        <!-- TODO: procurar imagens fontawesome -->
+        <div class="lang-toggle">
+            <button id="langBtn" aria-label="Toggle language">
+                <img src="assets/icons/world.png" alt="Toggle Language">
+            </button>
+        </div>
     </header>
 
     <!-- HERO SECTION -->
@@ -39,7 +72,7 @@
         <!-- Professional title -->
         <h2>Junior Web Developer</h2>
         <!-- Tagline -->
-         <!-- TODO: frase menos foleira -->
+        <!-- TODO: frase menos foleira -->
         <p>"Passionate about creating clean and professional web solutions"</p>
         <!-- Call-to-action button -->
         <button id="contactBtn">Contact Me</button>
@@ -58,10 +91,10 @@
     </section>
 
     <!-- PROJECTS -->
-     <!-- TODO: carrossel -->
+    <!-- TODO: carrossel -->
     <section id="projects">
         <!-- Project Card 1 -->
-         <!-- todo app -->
+        <!-- todo app -->
         <div class="project-card">
             <img src="assets/images/project1.webp" alt="Project 1 Screenshot" loading="lazy">
             <h3>Todo List App</h3>
@@ -70,8 +103,9 @@
             <a href="https://github.com/pjsm-it/todo-app" target="_blank">GitHub</a>
             <a href="#" target="_blank">Live Demo</a>
         </div>
+
         <!-- Project Card 2 -->
-         <!-- weather dashboard -->
+        <!-- weather dashboard -->
         <div class="project-card">
             <img src="assets/images/project2.webp" alt="Project 2 Screenshot" loading="lazy">
             <h3>Weather App</h3>
@@ -80,6 +114,7 @@
             <a href="https://github.com/pjsm-it/weather-app" target="_blank">GitHub</a>
             <a href="#" target="_blank">Live Demo</a>
         </div>
+
         <!-- Project Card 3 (Future CRUD) -->
         <div class="project-card">
             <img src="assets/images/project3.webp" alt="Project 3 Screenshot" loading="lazy">
@@ -92,7 +127,7 @@
     </section>
 
     <!-- SKILLS -->
-     <!-- TODO: procurar certs e adicionar -->
+    <!-- TODO: procurar certs e adicionar -->
     <section id="skills">
         <h2>Skills</h2>
         <div class="skill-category">
@@ -141,10 +176,16 @@
     <!-- FOOTER -->
     <footer>
         <!-- Technologies used -->
-         <!-- TODO: adicionar conforme for usando -->
+        <!-- TODO: adicionar conforme for usando -->
         <!-- <p>Built with HTML5, CSS3, JavaScript, Font Awesome, AOS.js, EmailJS, Swiper</p> -->
-        <p>Built with HTML5</p>
+        <p>Built with HTML5, CSS3, JavaScript, Font Awesome, ICO converter</p>
+
+        <!-- Attribution for free icons -->
+        <p>Flag icons by <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank">Flaticon</a></p>
+
+        <!-- Copyright -->
         <p>© 2026 Paulo Melo</p>
     </footer>
+
 </body>
 </html>
