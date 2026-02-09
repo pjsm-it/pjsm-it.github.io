@@ -29,46 +29,40 @@
 </head>
 
 <body>
-    <!-- HEADER / NAVBAR -->
-    <header>
-        <!-- Navbar: Logo/Name + links + dark/light toggle + EN/PT toggle -->
-        <div class="logo">
-            <h1>Paulo Melo</h1>
-        </div>
+<!-- HEADER / NAVBAR -->
+<header>
+    <!-- Navbar: Logo/Name + links + right-side buttons -->
+    <div class="logo">
+        <h1>Paulo Melo</h1>
+    </div>
 
-        <nav>
-            <ul>
-                <!-- TODO: li? talvez não! -->
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="contact">Contact</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- Right-side buttons: Theme & Language -->
+    <div class="header-buttons">
         <!-- Theme toggle button (dark/light) -->
-        <!-- TODO: procurar imagens fontawesome -->
-         <!-- TODO: por isto a funcionar com CSS -->
-        <div class="theme-toggle">
-            <button id="themeBtn" aria-label="Toggle theme">
-                <img src="assets/icons/lightbulb-solid-full.svg" alt="Toggle Theme">
-            </button>
-        </div>
+        <button id="themeBtn" aria-label="Toggle theme" title="Dark Mode">
+            <img src="assets/icons/lightbulb-solid-full.svg" alt="Toggle Theme">
+        </button>
 
         <!-- Language toggle button (EN/PT) -->
-        <!-- TODO: procurar imagens fontawesome -->
-        <div class="lang-toggle">
-            <button id="langBtn" aria-label="Toggle language">
-                <img src="assets/icons/world.png" alt="Toggle Language">
-            </button>
-        </div>
-    </header>
+        <button id="langBtn" aria-label="Toggle language" title="PT-PT">
+            <img src="assets/icons/world.png" alt="Toggle Language">
+        </button>
+    </div>
+</header>
+
 
     <!-- HERO SECTION -->
     <section id="hero">
-        <!-- Name -->
-        <h1>Paulo Melo</h1>
         <!-- Professional title -->
         <h2>Junior Web Developer</h2>
         <!-- Tagline -->
