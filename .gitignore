@@ -416,3 +416,19 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Mac system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Node modules (se alguma vez usares Node para builds, etc.)
+node_modules/
+
+# Build output (se houver)
+dist/
+build/
+
+# Documentation generated automatically
+docs/
