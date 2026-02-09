@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Melo | Junior Web Developer</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Personal portfolio website of Paulo Melo, Junior Web Developer.">
+    <meta name="keywords" content="Paulo Melo, Web Developer, Portfolio, HTML, CSS, JavaScript">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+    <!-- JS -->
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/theme-toggle.js" defer></script>
+    <script src="js/lang-toggle.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <!-- Navbar: Logo/Name + links + dark/light toggle + EN/PT toggle -->
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <!-- Name -->
+        <h1>Paulo Melo</h1>
+        <!-- Professional title -->
+        <h2>Junior Web Developer</h2>
+        <!-- Tagline -->
+         <!-- TODO: frase menos foleira -->
+        <p>"Passionate about creating clean and professional web solutions"</p>
+        <!-- Call-to-action button -->
+        <button id="contactBtn">Contact Me</button>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+        <!-- Left column: text about professional/academic background, motivation, main skills -->
+        <div class="about-text">
+            <p><!-- 150-200 words about professional/academic background --></p>
+        </div>
+        <!-- Right column: profile photo -->
+        <div class="about-photo">
+            <img src="assets/images/profile.webp" alt="Paulo Melo">
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+     <!-- TODO: carrossel -->
+    <section id="projects">
+        <!-- Project Card 1 -->
+         <!-- todo app -->
+        <div class="project-card">
+            <img src="assets/images/project1.webp" alt="Project 1 Screenshot" loading="lazy">
+            <h3>Todo List App</h3>
+            <p>Simple task manager built with HTML, CSS, JS.</p>
+            <p>Tech: HTML5, CSS3, JavaScript (ES6+)</p>
+            <a href="https://github.com/pjsm-it/todo-app" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Live Demo</a>
+        </div>
+        <!-- Project Card 2 -->
+         <!-- weather dashboard -->
+        <div class="project-card">
+            <img src="assets/images/project2.webp" alt="Project 2 Screenshot" loading="lazy">
+            <h3>Weather App</h3>
+            <p>Angular app using OpenWeather API.</p>
+            <p>Tech: Angular, TypeScript, REST API</p>
+            <a href="https://github.com/pjsm-it/weather-app" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Live Demo</a>
+        </div>
+        <!-- Project Card 3 (Future CRUD) -->
+        <div class="project-card">
+            <img src="assets/images/project3.webp" alt="Project 3 Screenshot" loading="lazy">
+            <h3>CRUD App (Future)</h3>
+            <p>Full-stack project demonstrating database operations.</p>
+            <p>Tech: Node.js, Express, PostgreSQL</p>
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Live Demo</a>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+     <!-- TODO: procurar certs e adicionar -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-category">
+            <h3>Frontend</h3>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript (ES6+)</span>
+            <span>Angular</span>
+        </div>
+        <div class="skill-category">
+            <h3>Backend</h3>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>PostgreSQL</span>
+        </div>
+        <div class="skill-category">
+            <h3>Tools</h3>
+            <span>Git</span>
+            <span>GitHub</span>
+        </div>
+        <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <span>Teamwork</span>
+            <span>Communication</span>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+            <li><a href="mailto:pjsm.it@proton.me">Email</a></li>
+            <li><a href="https://github.com/pjsm-it" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/paulojsm/" target="_blank">LinkedIn</a></li>
+        </ul>
+        <!-- Optional contact form (EmailJS) -->
+        <form id="contactForm">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>Location: Braga, Portugal</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- Technologies used -->
+         <!-- TODO: adicionar conforme for usando -->
+        <p>Built with HTML5, CSS3, JavaScript, Font Awesome, AOS.js, EmailJS, Swiper</p>
+        <p>© 2026 Paulo Melo</p>
+    </footer>
+</body>
+</html>
