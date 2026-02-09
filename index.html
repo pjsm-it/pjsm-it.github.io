@@ -6,22 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paulo Melo | Junior Web Developer</title>
 
-    <!-- SEO Meta Tags -->
     <meta name="description" content="Personal portfolio website of Paulo Melo, Junior Web Developer.">
     <meta name="keywords" content="Paulo Melo, Web Developer, Portfolio, HTML, CSS, JavaScript">
 
-    <!-- Favicon -->
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/theme.css">
 
-    <!-- JS -->
-    <!-- TODO: verificar se todos fazem falta
-     e remover inúteis -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <script src="js/main.js" defer></script>
     <script src="js/animations.js" defer></script>
     <script src="js/theme-toggle.js" defer></script>
@@ -29,9 +25,7 @@
 </head>
 
 <body>
-    <!-- HEADER / NAVBAR -->
     <header>
-        <!-- Navbar: Logo/Name + links + right-side buttons -->
         <div class="logo">
             <h1>Paulo Melo</h1>
         </div>
@@ -46,35 +40,25 @@
             </ul>
         </nav>
 
-            <!-- Right-side buttons: Theme & Language -->
-            <div class="header-buttons">
-                <!-- Theme toggle button (dark/light) -->
-                <button id="themeBtn" aria-label="Toggle theme" title="Dark Mode">
-                    <img src="assets/icons/lightbulb-solid-full.svg" alt="Toggle Theme">
-                </button>
+        <div class="header-buttons">
+            <button id="themeBtn" aria-label="Toggle theme" title="Dark Mode">
+                <img src="assets/icons/lightbulb-solid-full.svg" alt="Toggle Theme">
+            </button>
 
-            <!-- Language toggle button (EN/PT) -->
             <button id="langBtn" aria-label="Toggle language" title="PT-PT">
                 <img src="assets/icons/world.png" alt="Toggle Language">
             </button>
         </div>
     </header>
 
-
-    <!-- HERO SECTION -->
     <section id="hero">
-        <!-- Professional title -->
         <h2>Junior Web Developer</h2>
-        <!-- Tagline -->
         <p>Building clean, professional web solutions with a focus on performance, SEO, and maintainable code.</p>
     </section>
 
-    <!-- ABOUT ME -->
     <section id="about">
         <h2>About Me</h2>
-
         <div class="about-content">
-            <!-- Left column: text about professional/academic background, motivation, main skills -->
             <div class="about-text">
                 <p>
                 I develop high-quality web solutions with attention to performance, UX, and best practices. 
@@ -85,51 +69,50 @@
                 </p>
             </div>
 
-            <!-- Right column: avatar image -->
             <div class="about-photo">
                 <img src="assets/images/avataaars.svg" alt="Paulo Melo Avatar">
             </div>
         </div>
-     </section>
+    </section>
 
-    <!-- PROJECTS -->
-    <!-- TODO: carrossel -->
     <section id="projects">
-        <!-- Project Card 1 -->
-        <!-- todo app -->
-        <div class="project-card">
-            <img src="assets/images/project1.webp" alt="Project 1 Screenshot" loading="lazy">
-            <h3>Todo List App</h3>
-            <p>Simple task manager built with HTML, CSS, JS.</p>
-            <p>Tech: HTML5, CSS3, JavaScript (ES6+)</p>
-            <a href="https://github.com/pjsm-it/todo-app" target="_blank">GitHub</a>
-            <a href="#" target="_blank">Live Demo</a>
-        </div>
+        <h2>Projects</h2>
 
-        <!-- Project Card 2 -->
-        <!-- weather dashboard -->
-        <div class="project-card">
-            <img src="assets/images/project2.webp" alt="Project 2 Screenshot" loading="lazy">
-            <h3>Weather App</h3>
-            <p>Angular app using OpenWeather API.</p>
-            <p>Tech: Angular, TypeScript, REST API</p>
-            <a href="https://github.com/pjsm-it/weather-app" target="_blank">GitHub</a>
-            <a href="#" target="_blank">Live Demo</a>
-        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide project-card">
+                    <img src="assets/images/screenshot-todoapp.png" alt="Project 1 Screenshot" loading="lazy">
+                    <h3>Todo List App</h3>
+                    <p>Simple task manager built with HTML, CSS, JS.</p>
+                    <p>Tech: HTML5, CSS3, JavaScript (ES6+)</p>
+                    <a href="https://github.com/pjsm-it/todo-app" target="_blank" aria-label="GitHub">
+                        <img src="assets/icons/square-github-brands-solid-full.svg" alt="GitHub" class="github-icon">
+                    </a>
+                </div>
 
-        <!-- Project Card 3 (Future CRUD) -->
-        <div class="project-card">
-            <img src="assets/images/project3.webp" alt="Project 3 Screenshot" loading="lazy">
-            <h3>CRUD App (Future)</h3>
-            <p>Full-stack project demonstrating database operations.</p>
-            <p>Tech: Node.js, Express, PostgreSQL</p>
-            <a href="#" target="_blank">GitHub</a>
-            <a href="#" target="_blank">Live Demo</a>
+                <div class="swiper-slide project-card">
+                    <img src="assets/images/screenshot-weatherDashboard.png" alt="Project 2 Screenshot" loading="lazy">
+                    <h3>Weather App</h3>
+                    <p>Angular app using OpenWeather API.</p>
+                    <p>Tech: Angular, TypeScript, REST API</p>
+                    <a href="https://github.com/pjsm-it/weather-dashboard" target="_blank" aria-label="GitHub">
+                        <img src="assets/icons/square-github-brands-solid-full.svg" alt="GitHub" class="github-icon">
+                    </a>
+                </div>
+
+                <div class="swiper-slide project-card">
+                    <img src="assets/images/project3.webp" alt="Project 3 Screenshot" loading="lazy">
+                    <h3>CRUD App (Future)</h3>
+                    <p>Full-stack project demonstrating database operations.</p>
+                    <p>Tech: Node.js, Express, PostgreSQL</p>
+                    <a href="#" target="_blank" aria-label="GitHub">
+                        <img src="assets/icons/square-github-brands-solid-full.svg" alt="GitHub" class="github-icon">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- SKILLS -->
-    <!-- TODO: procurar certs e adicionar -->
     <section id="skills">
         <h2>Skills</h2>
         <div class="skill-category">
@@ -157,7 +140,6 @@
         </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact">
         <h2>Contact Me</h2>
         <ul>
@@ -165,7 +147,6 @@
             <li><a href="https://github.com/pjsm-it" target="_blank">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/paulojsm/" target="_blank">LinkedIn</a></li>
         </ul>
-        <!-- Optional contact form (EmailJS) -->
         <form id="contactForm">
             <input type="text" placeholder="Name" required>
             <input type="email" placeholder="Email" required>
@@ -175,19 +156,31 @@
         <p>Location: Braga, Portugal</p>
     </section>
 
-    <!-- FOOTER -->
     <footer>
-        <!-- Technologies used -->
-        <!-- TODO: adicionar conforme for usando -->
-        <!-- <p>Built with HTML5, CSS3, JavaScript, Font Awesome, AOS.js, EmailJS, Swiper</p> -->
-        <p>Built with HTML5, CSS3, JavaScript, Font Awesome, ICO converter, Avataaars Generator</p>
-
-        <!-- Attribution for free icons -->
+        <p>Built with HTML5, CSS3, JavaScript, Font Awesome, ICO converter, Avataaars Generator, Swiperjs</p>
         <p>Flag icons by <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank">Flaticon</a></p>
-
-        <!-- Copyright -->
         <p>© 2026 Paulo Melo</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+            },
+        });
+    });
+    </script>
 </body>
 </html>
