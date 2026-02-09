@@ -33,7 +33,7 @@ You can view the portfolio online here:
 ## Get in Touch
 * [GitHub](https://github.com/pjsm-it)
 * [LinkedIn](https://www.linkedin.com/in/paulojsm/)
-* [Email](pjsm.it@proton.me)
+* [Email](mailto:pjsm.it@proton.me)
 
 ## License
 MIT License
