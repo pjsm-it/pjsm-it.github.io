@@ -119,3 +119,75 @@ header nav ul li a:hover {
         padding: 0 1rem; /* Small horizontal padding */
     }
 }
+
+/* =========================
+   ABOUT ME SECTION
+   ========================= */
+
+#about {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #111111;
+    text-align: center; /* Center title on mobile */
+}
+
+.about-content {
+    display: flex;
+    gap: 2rem;
+    max-width: 1000px;
+    width: 100%;
+    align-items: center;
+}
+
+/* Left column text */
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+/* Right column avatar */
+.about-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-photo img {
+    width: 200px; /* Ajustável */
+    height: auto;
+    border-radius: 50%; /* Faz a imagem circular */
+    max-width: 100%;
+}
+
+/* Responsive: mobile */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about h2 {
+        font-size: 1.75rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-photo img {
+        width: 150px;
+    }
+}
