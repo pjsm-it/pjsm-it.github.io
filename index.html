@@ -167,20 +167,24 @@
     <script>
     document.addEventListener("DOMContentLoaded", () => {
         const swiper = new Swiper('.swiper', {
-            loop: true,
             slidesPerView: 1,
             spaceBetween: 20,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true
-            },
+
+        /* Evita bugs quando há poucos slides */
+            loop: false,
+            watchOverflow: true,
+
+        /* Breakpoints simples e previsíveis */
             breakpoints: {
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-            },
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            }
         });
     });
-    </script>
+</script>
 </body>
 </html>

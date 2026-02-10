@@ -194,3 +194,18 @@ header nav ul li a:hover {
         width: 150px;
     }
 }
+
+.swiper {
+    padding: 1rem 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
