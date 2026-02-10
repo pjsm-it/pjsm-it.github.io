@@ -10,7 +10,10 @@ header {
     z-index: 1000;
 }
 
-header .logo h1 { margin: 0; font-size: 1.5rem; }
+header .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
 
 header nav ul {
     display: flex;
@@ -59,7 +62,11 @@ header nav ul li a:hover {
     min-height: 50vh;
 }
 
-#hero h2 { font-size: 2rem; margin: 0; color: #111111; }
+#hero h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #111111;
+}
 
 #hero p {
     margin-top: 1rem;
@@ -69,17 +76,50 @@ header nav ul li a:hover {
     line-height: 1.5;
 }
 
-#about { padding: 4rem 2rem; display: flex; flex-direction: column; align-items: center; }
+#about {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-#about h2 { font-size: 2rem; margin-bottom: 2rem; color: #111111; text-align: center; }
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #111111;
+    text-align: center;
+}
 
-.about-content { display: flex; gap: 2rem; max-width: 1000px; width: 100%; align-items: center; }
+.about-content {
+    display: flex;
+    gap: 2rem;
+    max-width: 1000px;
+    width: 100%;
+    align-items: center;
+}
 
-.about-text { flex: 1; }
-.about-text p { font-size: 1.1rem; line-height: 1.6; color: #333333; }
+.about-text {
+    flex: 1;
+}
 
-.about-photo { flex: 1; display: flex; justify-content: center; }
-.about-photo img { width: 200px; height: auto; border-radius: 50%; max-width: 100%; }
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.about-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-photo img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    max-width: 100%;
+}
 
 .project-card {
     width: 100%;
@@ -103,18 +143,54 @@ header nav ul li a:hover {
     transition: transform 0.2s ease;
 }
 
-.github-icon:hover { transform: scale(1.1); }
+.github-icon:hover {
+    transform: scale(1.1);
+}
 
 @media (max-width: 768px) {
-    header { flex-direction: column; align-items: flex-start; gap: 1rem; }
-    header nav ul { flex-direction: column; gap: 0.75rem; }
-    .header-buttons { margin-left: 0; }
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
 
-    #hero h2 { font-size: 1.5rem; }
-    #hero p { font-size: 1rem; padding: 0 1rem; }
+    header nav {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
 
-    .about-content { flex-direction: column; text-align: center; }
-    #about h2 { font-size: 1.75rem; }
-    .about-text p { font-size: 1rem; }
-    .about-photo img { width: 150px; }
+    header nav ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .header-buttons {
+        margin-left: auto;
+    }
+
+    #hero h2 {
+        font-size: 1.5rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about h2 {
+        font-size: 1.75rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-photo img {
+        width: 150px;
+    }
 }
