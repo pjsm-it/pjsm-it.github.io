@@ -10,7 +10,7 @@ header {
     z-index: 1000;
 }
 
-header .logo h1 { margin: 0; font-size: 1.5rem; }
+header .logo h1 { margin: 0; font-size: 2.5rem; }
 
 header nav ul {
     display: flex;
@@ -138,17 +138,26 @@ header nav ul li a:hover {
     transition: width 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    header { flex-direction: column; align-items: center; gap: 1rem; }
-    header nav ul { flex-direction: column; gap: 0.75rem; text-align: center; }
-    .header-buttons { margin-left: 0; }
-    #hero h2 { font-size: 1.5rem; }
-    #hero p { font-size: 1rem; padding: 0 1rem; }
-    .about-content { flex-direction: column; text-align: center; }
-    #about h2 { font-size: 1.75rem; }
-    .about-text p { font-size: 1rem; }
-    .about-photo img { width: 150px; }
-    .carousel-bar { width: 80%; }
+.skill-category {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.skill-category h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.skill-category span {
+    background-color: #f0f0f0;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: #111111;
 }
 
 .contact-icons {
@@ -197,7 +206,7 @@ header nav ul li a:hover {
 }
 
 footer {
-    background-color: #f2f2f2;
+    background-color: #d9d9d9;
     padding: 2rem 1.5rem;
     text-align: center;
     color: #333333;
@@ -215,4 +224,44 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    header { flex-direction: column; align-items: center; gap: 0.75rem; }
+    header nav ul { flex-direction: column; gap: 0.5rem; text-align: center; }
+    #hero h2 { font-size: 1.5rem; }
+    #hero p { font-size: 1rem; padding: 0 1rem; }
+    .about-content { flex-direction: column; text-align: center; }
+    .about-photo img { width: 120px; }
+    .carousel-bar { width: 90%; }
+    .swiper { padding: 0.5rem 0; }
+    .skill-category span { font-size: 0.85rem; padding: 0.4rem 0.6rem; }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    header { flex-direction: column; align-items: center; gap: 1rem; }
+    header nav ul { flex-direction: column; gap: 0.75rem; text-align: center; }
+    #hero h2 { font-size: 1.75rem; }
+    #hero p { font-size: 1.1rem; }
+    .about-content { flex-direction: column; text-align: center; }
+    .about-photo img { width: 150px; }
+    .carousel-bar { width: 80%; }
+    .swiper { padding: 1rem 0; }
+    .skill-category span { font-size: 0.9rem; padding: 0.45rem 0.65rem; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #hero h2 { font-size: 1.9rem; }
+    #hero p { font-size: 1.15rem; }
+    .about-photo img { width: 180px; }
+    .carousel-bar { width: 70%; }
+    .skill-category span { font-size: 0.95rem; padding: 0.5rem 0.75rem; }
+}
+
+@media (min-width: 1025px) {
+    #hero h2 { font-size: 2rem; }
+    #hero p { font-size: 1.2rem; }
+    .about-photo img { width: 200px; }
+    .carousel-bar { width: 60%; }
+    .skill-category span { font-size: 0.95rem; padding: 0.5rem 0.75rem; }
 }
