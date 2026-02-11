@@ -105,6 +105,11 @@ header nav ul li a:hover {
 
 .github-icon:hover { transform: scale(1.1); }
 
+#projects h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -138,6 +143,11 @@ header nav ul li a:hover {
     transition: width 0.3s ease;
 }
 
+#skills h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .skill-category {
     margin: 2rem 0;
     display: flex;
@@ -158,6 +168,11 @@ header nav ul li a:hover {
     border-radius: 4px;
     font-size: 0.95rem;
     color: #111111;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .contact-icons {
@@ -210,6 +225,7 @@ footer {
     padding: 2rem 1.5rem;
     text-align: center;
     color: #333333;
+    margin-top: 2rem;
 }
 
 footer p {
@@ -264,4 +280,13 @@ footer a:hover {
     .about-photo img { width: 200px; }
     .carousel-bar { width: 60%; }
     .skill-category span { font-size: 0.95rem; padding: 0.5rem 0.75rem; }
+}
+
+.header-buttons button {
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.header-buttons button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
 }
