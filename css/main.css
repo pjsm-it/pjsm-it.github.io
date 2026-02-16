@@ -1,3 +1,46 @@
+body.dark-mode {
+    color: #ffffff;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #7a7a7a;
+}
+
+body.dark-mode header .logo h1 {
+    color: #ffffff;
+}
+
+body.dark-mode header nav ul li a {
+    color: #ffffff;
+}
+
+body.dark-mode #hero,
+body.dark-mode #about,
+body.dark-mode #projects,
+body.dark-mode #skills {
+    background-color: #bfbfbf;
+    color: #ffffff;
+}
+
+body.dark-mode #hero h2,
+body.dark-mode #hero p,
+body.dark-mode #about h2,
+body.dark-mode #projects h2,
+body.dark-mode #skills h2,
+body.dark-mode p,
+body.dark-mode .skill-category span {
+    color: #ffffff;
+}
+
+body.dark-mode .skill-category span {
+    background-color: #9e9e9e;
+}
+
+body.dark-mode .contact-icons img {
+    filter: brightness(0.9);
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -137,6 +180,7 @@ body.dark-mode #hero::before, body.dark-mode #about::before {
 .skill-category h3 { width: 100%; text-align: center; margin-bottom: 0.75rem; }
 .skill-category span { background-color: #f0f0f0; padding: 0.5rem 0.75rem; border-radius: 4px; font-size: 0.95rem; color: #111111; }
 
+#contact { padding: 2rem 0; }
 #contact h2 { text-align: center; margin-bottom: 2rem; }
 .contact-icons { display: flex; gap: 1.5rem; justify-content: center; align-items: center; margin: 1.5rem 0; }
 .contact-icons img { width: 32px; height: 32px; transition: transform 0.2s ease; }
@@ -151,6 +195,22 @@ footer { background-color: #d9d9d9; padding: 2rem 1.5rem; text-align: center; co
 footer p { margin: 0.5rem 0; font-size: 0.9rem; }
 footer a { color: #007BFF; text-decoration: none; }
 footer a:hover { text-decoration: underline; }
+
+body.dark-mode .contact-section {
+    background-color: #bfbfbf;
+    color: #ffffff;
+}
+
+body.dark-mode .contact-section h2,
+body.dark-mode .contact-section .location-text,
+body.dark-mode .contact-section p,
+body.dark-mode .contact-section span {
+    color: #ffffff;
+}
+
+body.dark-mode .contact-section .contact-icons img {
+    filter: brightness(0.9);
+}
 
 @media (max-width: 480px) {
     header { flex-direction: column; align-items: center; gap: 0.75rem; }

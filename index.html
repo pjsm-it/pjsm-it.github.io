@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/theme-toggle.js"></script>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
         </nav>
         <div class="header-buttons">
             <button id="themeBtn" aria-label="Toggle theme" title="Dark Mode">
-                <img src="assets/icons/lightbulb-regular-full.svg" alt="Toggle Theme">
+                <img src="assets/icons/lightbulb-regular-full.svg" alt="Toggle Theme" class="theme-icon">
             </button>
             <button id="langBtn" aria-label="Toggle language" title="PT-PT">
                 <img src="assets/icons/united-states-2.png" alt="Toggle Language">
@@ -49,13 +50,7 @@
         <h2>About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>
-                    I develop high-quality web solutions with attention to performance, UX, and best practices.
-                    I have hands-on experience in HTML5, CSS3, JavaScript, and Angular for building responsive and interactive web applications.
-                    My background also includes database management with SQL Server and NoSQL, and object-oriented programming in C# .NET.
-                    I have completed workshops in Agile Methodologies, UX Essentials, and professional development,
-                    and contributed to multiple practical projects, continuously improving my technical skills.
-                </p>
+                <p>I develop high-quality web solutions with attention to performance, UX, and best practices. I have hands-on experience in HTML5, CSS3, JavaScript, and Angular for building responsive and interactive web applications. My background also includes database management with SQL Server and NoSQL, and object-oriented programming in C# .NET. I have completed workshops in Agile Methodologies, UX Essentials, and professional development, and contributed to multiple practical projects, continuously improving my technical skills.</p>
             </div>
             <div class="about-photo">
                 <img src="assets/images/avataaars.svg" alt="Paulo Melo Avatar">
@@ -141,7 +136,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
         <div class="contact-icons">
             <a href="mailto:pjsm.it@proton.me" aria-label="Email">
