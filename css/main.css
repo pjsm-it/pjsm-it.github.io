@@ -1,3 +1,6 @@
+/* ===========================
+   DARK MODE
+=========================== */
 body.dark-mode {
     color: #ffffff;
 }
@@ -24,6 +27,7 @@ body.dark-mode #skills {
 }
 
 body.dark-mode #hero h2,
+body.dark-mode #hero h3,
 body.dark-mode #hero p,
 body.dark-mode #about h2,
 body.dark-mode #projects h2,
@@ -31,6 +35,10 @@ body.dark-mode #skills h2,
 body.dark-mode p,
 body.dark-mode .skill-category span {
     color: #ffffff;
+}
+
+body.dark-mode #hero h3 {
+    color: #7db8f7;
 }
 
 body.dark-mode .skill-category span {
@@ -41,6 +49,29 @@ body.dark-mode .contact-icons img {
     filter: brightness(0.9);
 }
 
+body.dark-mode .cv-download {
+    color: #ffffff;
+}
+
+body.dark-mode .contact-section {
+    background-color: #bfbfbf;
+    color: #ffffff;
+}
+
+body.dark-mode .contact-section h2,
+body.dark-mode .contact-section .location-text,
+body.dark-mode .contact-section p,
+body.dark-mode .contact-section span {
+    color: #ffffff;
+}
+
+body.dark-mode .contact-section .contact-icons img {
+    filter: brightness(0.9);
+}
+
+/* ===========================
+   HEADER
+=========================== */
 header {
     display: flex;
     justify-content: space-between;
@@ -98,6 +129,9 @@ header nav ul li a:hover {
     height: 24px;
 }
 
+/* ===========================
+   HERO & ABOUT — SHARED BACKGROUND
+=========================== */
 #hero, #about {
     position: relative;
     background-color: #ffffff;
@@ -126,6 +160,9 @@ body.dark-mode #hero::before, body.dark-mode #about::before {
     background: rgba(0, 0, 0, 0.3);
 }
 
+/* ===========================
+   HERO
+=========================== */
 #hero {
     display: flex;
     flex-direction: column;
@@ -136,10 +173,78 @@ body.dark-mode #hero::before, body.dark-mode #about::before {
     min-height: 50vh;
 }
 
-#hero h2 { font-size: 2rem; color: #111111; }
+#hero h2 {
+    font-size: 2.5rem;
+    color: #111111;
+    margin-bottom: 0.25rem;
+}
 
-#hero p { margin-top: 1rem; font-size: 1.2rem; color: #333333; max-width: 600px; line-height: 1.5; }
+#hero h3 {
+    font-size: 1.3rem;
+    color: #007BFF;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
 
+#hero p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #333333;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0.75rem 1.75rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: #ffffff;
+}
+
+.cv-download {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #111111;
+    font-size: 0.95rem;
+}
+
+.cv-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+}
+
+.cv-download:hover .cv-icon {
+    transform: scale(1.1);
+}
+
+/* ===========================
+   ABOUT
+=========================== */
 #about { padding: 4rem 2rem; display: flex; flex-direction: column; align-items: center; }
 
 #about h2 { font-size: 2rem; color: #111111; text-align: center; margin-bottom: 0;}
@@ -152,6 +257,9 @@ body.dark-mode #hero::before, body.dark-mode #about::before {
 .about-photo { flex: 1; display: flex; justify-content: center; }
 .about-photo img { width: 200px; height: auto; border-radius: 50%; max-width: 100%; }
 
+/* ===========================
+   PROJECTS
+=========================== */
 .project-card { width: 100%; max-width: 400px; text-align: center; }
 .project-card > img { width: 100%; height: auto; object-fit: contain; display: block; margin: 0 auto 1rem; }
 
@@ -159,7 +267,6 @@ body.dark-mode #hero::before, body.dark-mode #about::before {
 .github-icon:hover { transform: scale(1.1); }
 
 #projects { padding-top: 2rem; }
-
 #projects h2 { text-align: center; margin-bottom: 2rem; }
 
 .projects-container { display: flex; flex-direction: column; align-items: center; }
@@ -169,6 +276,17 @@ body.dark-mode #hero::before, body.dark-mode #about::before {
 .carousel-bar { width: 60%; height: 8px; background-color: #e0e0e0; border-radius: 4px; margin-top: 1rem; overflow: hidden; }
 .carousel-progress { height: 100%; width: 0%; background-color: #007BFF; border-radius: 4px; transition: width 0.3s ease; }
 
+.project-card > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
 #skills { padding-top: 1rem; padding-bottom: 2rem; }
 #skills h2 { text-align: center; margin-bottom: 2rem; }
 
@@ -176,6 +294,9 @@ body.dark-mode #hero::before, body.dark-mode #about::before {
 .skill-category h3 { width: 100%; text-align: center; margin-bottom: 0.75rem; }
 .skill-category span { background-color: #f0f0f0; padding: 0.5rem 0.75rem; border-radius: 4px; font-size: 0.95rem; color: #111111; }
 
+/* ===========================
+   CONTACT
+=========================== */
 #contact { padding: 2rem 0; }
 #contact h2 { text-align: center; margin-top: 0; }
 .contact-icons { display: flex; gap: 1.5rem; justify-content: center; align-items: center; margin: 1.5rem 0; }
@@ -187,39 +308,22 @@ body.dark-mode #hero::before, body.dark-mode #about::before {
 .location-icon img { width: 100%; height: 100%; object-fit: contain; }
 .location-text { font-size: 1rem; color: #333333; }
 
+/* ===========================
+   FOOTER
+=========================== */
 footer { background-color: #d9d9d9; padding: 2rem 1.5rem; text-align: center; color: #333333; }
 footer p { margin: 0.5rem 0; font-size: 0.9rem; }
 footer a { color: #007BFF; text-decoration: none; }
 footer a:hover { text-decoration: underline; }
 
-body.dark-mode .contact-section {
-    background-color: #bfbfbf;
-    color: #ffffff;
-}
-
-body.dark-mode .contact-section h2,
-body.dark-mode .contact-section .location-text,
-body.dark-mode .contact-section p,
-body.dark-mode .contact-section span {
-    color: #ffffff;
-}
-
-body.dark-mode .contact-section .contact-icons img {
-    filter: brightness(0.9);
-}
-
-.project-card > img {
-  width: 100%;
-  height: 300px; 
-  object-fit: cover;
-  display: block;
-  margin-bottom: 1rem;
-}
-
+/* ===========================
+   RESPONSIVE
+=========================== */
 @media (max-width: 480px) {
     header { flex-direction: column; align-items: center; gap: 0.75rem; }
     header nav ul { flex-direction: column; gap: 0.5rem; text-align: center; }
-    #hero h2 { font-size: 1.5rem; }
+    #hero h2 { font-size: 1.75rem; }
+    #hero h3 { font-size: 1.1rem; }
     #hero p { font-size: 1rem; padding: 0 1rem; }
     .about-content { flex-direction: column; text-align: center; }
     .about-photo img { width: 120px; }
@@ -231,7 +335,8 @@ body.dark-mode .contact-section .contact-icons img {
 @media (min-width: 481px) and (max-width: 768px) {
     header { flex-direction: column; align-items: center; gap: 1rem; }
     header nav ul { flex-direction: column; gap: 0.75rem; text-align: center; }
-    #hero h2 { font-size: 1.75rem; }
+    #hero h2 { font-size: 2rem; }
+    #hero h3 { font-size: 1.2rem; }
     #hero p { font-size: 1.1rem; }
     .about-content { flex-direction: column; text-align: center; }
     .about-photo img { width: 150px; }
