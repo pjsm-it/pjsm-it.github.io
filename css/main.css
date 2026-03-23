@@ -123,7 +123,7 @@ header nav ul li a:hover {
     height: 24px;
 }
 
-#hero, #about {
+#hero, #about, #skills, #contact {
     position: relative;
     background-color: #ffffff;
     background-image: url('../assets/backgrounds/scattered-forcefields.svg');
